@@ -1,0 +1,157 @@
+/* 세번쨰 화면 */
+.community{width: 100%;}
+.community>ul{display: flex; width: 100%;height: 950px;}
+
+.community>ul>li{
+    position: relative;
+    width: 33.5%;
+    height: 100%;
+}
+
+.community>ul>li>a>.bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 950px;
+    transition: all 0.5s;
+    z-index: 800;
+}
+
+.community>ul>li>a>img{
+    width: 100%;
+    height: 100%;
+}
+
+.community>ul>li:hover>a>.bg{background-color: rgba(2,2,2,0.5);}
+
+.community>ul>li>a>h3{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -50px 0 0 -70px;
+    color: #fff;
+    font-size: 35px;
+    z-index: 900;
+}
+
+.community>ul>li:nth-child(3)>a>h3{margin-left: -150px;}
+
+.community>ul>li>a>p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 20px 0 0 -150px;
+    color: #fff;
+    font-size: 17px;
+    z-index: 900;
+}
+
+/* 마지막 섹션 */
+.franchise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 930px;
+}
+
+.franchise>div.img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -260px 0 0 -290px;
+}
+
+.franchise>div.img>img{
+    position: relative;
+    z-index: 1000;
+}
+
+.franchise>div.img:after{
+    display: block;
+    position: absolute;
+    bottom: -50px;
+    right: 50%;
+    margin-right: -500px;
+    width: 500px;
+    height: 500px;
+    background-color: #005ad5;
+    content: '';
+}
+
+.franchise>.txt>h2{
+    position: absolute;
+    left: 240px;
+    top: 50%;
+    margin-top: -150px;
+    color: #005ad5;
+    font-size: 50px;
+    z-index: 1000;
+}
+
+.franchise>.txt>h2>span{display: block;}
+
+.franchise>.txt>p{
+    position: absolute;
+    left: 240px;
+    top: 50%;
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.franchise>.txt>p>span{display: block;}
+
+.franchise>.txt>a{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 310px;
+    margin-top: 150px;
+    color: #005ad5;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.franchise>.txt>a>span{
+    position: absolute;
+    display:inline-block;
+    width: 50px;
+    height: 50px;
+    left: -70px;
+    top: -15px;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+
+.franchise>.txt>a>span:after{
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    display: block;
+    width: 62px;
+    height: 62px;
+    background-image: url(../images/btn-blue.png);
+    content: '';
+}
+
+.franchise>.txt>a>span>img{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    transition: all 0.5s;
+}
+
+.franchise>.txt>a:hover>span{transform: scale(1.2);}
+
+.franchise>.txt>a:hover>span>img{transform: rotate(90deg);}
+
+.franchise>img{
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    margin-left: -400px;
+    animation: rotatetext 16s linear infinite;
+}
